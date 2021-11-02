@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Richard Wren">
+	<meta name="description" content="Make your reservations today at Pacific Trails Resort and discover what the pacific coast has to offer.">
+	<meta name="keywords" content="yurt, family, pacific, resort, getaway, vacation, luxury">
+	<title> Pacific Trails Resort CS2413 :: Reservations by Richard Wren
+	</title>
+	<link rel="stylesheet" type="text/css" href="pacific.css">
+	<link rel="icon" type="image/favicon.ico" href="images/favicon.ico">
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+		</script>
+	<![endif]-->	
+</head>
+
+<body>
+<!-----------Wrapper-------------->
+<div id="wrapper">
+<!-------------HEADER-------------->
+<header>
+	<h1> Pacific Trails Resort
+	</h1>
+</header>
+<!-------------Navigation----------->
+<nav>
+<ul>
+	<li><a href="index.html"> Home</a></li>
+	<li><a href="yurts.html"> Yurts</a></li>
+	<li><a href="activities.html">Activities</a></li>
+	<li><a href="reservations.html">Reservations</a></li>
+</ul>	
+</nav>
+<!----------------Main-------------->
+<main>
+	<h2>Reservations at Pacific trails</h2>
+	<h3>Contact Us</h3>
+	<p>Required information is marked with an asterisk (*).</p>
+<!------------------form----------------------->
+	<form method="post" action="http://webdevbasics.net/scripts/pacific.php" id="myReservations" name="myReservations">
+		<label for="myFName">*First Name:</label>
+			<input type="text" id="myFName" name="myFName" accesskey="F" tabindex="1" required>
+
+		<label for="myLName">*Last Name:</label>
+			<input type="text" id="myLName" name="myLName" accesskey="L" tabindex="2" required>
+
+		<label for="myEmail">*Email:</label>
+			<input type="email" id="myEmail" name="myEmail" accesskey="E" tabindex="3" required>
+
+		<label for="myPhone">Phone:</label>
+			<input type="tel" id="myPhone" name="myPhone" accesskey="P" tabindex="4">
+
+		<label for="myArrival">*Arrival:</label>
+			<input type="date" name="myArrival" id="myArrival" accesskey="A" tabindex="5" required>
+
+		<label for="myNights">*Nights:</label>
+			<input type="number" name="myNights" id="myNights" min="1" max="14" accesskey="N" tabindex="6" required>
+
+		<label for="myComments">Comments</label>
+			<textarea name="myComments" id="myComments" rows="2" cols="20" accesskey="C" tabindex="7"></textarea>
+
+	<!----------------------form buttons-------------------------->		
+
+		<input type="submit" name="mySubmit" id="mySubmit" accesskey="S" tabindex="8" class="printHidden" value="Submit Form">
+
+		<input type="reset" name="myReset" id="myReset" accesskey="R" tabindex="9" class="printHidden" value="Clear Form">
+
+		</form>
+
+
+
+	
+</main>
+	<!-----------Footer----------------->
+	<footer><br>
+<!-------bottom nav----------->
+<div id="navBottom">
+	<a href="index.html"> Home</a>&nbsp;
+	<a href="yurts.html"> Yurts</a>&nbsp;
+	<a href="activities.html">Activities</a>&nbsp;
+	<a href="reservations.html">Reservations</a><br>
+</div>	
+<!--------copy and email--------->
+	Copyright &copy; 2015 Pacific Trails Resort<br>
+	<a href="mailto:Richard@Wren.com">Richard@Wren.com</a>
+	</footer>
+</div>
+</body>
+</html>
