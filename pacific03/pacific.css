@@ -1,0 +1,79 @@
+/*-------------------------------------------------------------------
+Project Name: Pacific trails
+Author: Richard Wren
+version: 1.0
+last changed: 1/25/21
+
+Colors:
+  used #ffffff, #666666, #90c7e3, #000033
+
+
+Typography:
+	Body: adjusted background color, font color, and font family.
+	
+		header: adjusted line height, color, backgroung color, font family, 
+		h1: changed line-height
+		h2: changed color, and font family
+		nav: added bold weight and font color
+		dt: added bold weight and font color
+
+	special classes and identifiers:
+	
+		resort class: changed font size, and color
+		wrapper identifier: centered and set an 80% width
+		
+	Footer: changed font size, added italics centered text
+
+
+
+----------------------------------------------------------------------*/
+
+/*----------------web page--------------*/
+body { background-color: #fff;
+		color: #666;
+font-family: Arial, Verdana, sans-serif;}
+
+/*---------------header---------------*/
+
+header { background-color: #000033;
+			color: #fff;
+			line-height: 200%;
+font-family: Georgia, serif;}
+
+/*--------------h1--------------------*/
+
+h1 { line-height: 200%;}
+
+/*-----------h2---------------*/
+
+h2 { color: #39c;
+		font-family: Georgia;}
+
+/*--------------Nav-----------*/
+
+nav { font-weight: bold;
+		color: #90c7e3;}
+		
+/*---------Dt----------*/
+
+dt { font-weight: bold;
+		color: #000033;}
+		
+/*------------special class------------*/
+
+.resort { color: #000033;
+			font-size: 1.2em;}
+
+/*--------footer---------*/
+
+footer { font-size: .70em;
+			font-style: italic;
+			text-align: center;
+			}
+
+/*----------Wrapper------------*/
+
+#wrapper { margin: auto;
+text-align: center;
+width: 80%;
+}
