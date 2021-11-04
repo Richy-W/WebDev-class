@@ -1,0 +1,307 @@
+/*-------------------------------------------------------------------
+Project Name: Pacific trails
+Author: Richard Wren
+version: 1.6
+last changed: 2/11/21
+
+Colors:
+  used #ffffff, #666666, #90c7e3, #000033
+
+
+Typography:
+	main: made block element, 20 px padding on left and right, background color set, margin set
+			main img: float left, bottom and right padding set
+			main Unordered list: set style to inside
+	
+	Body: added background image, font color, and font family.
+	
+		header: made block element, adjusted line height, color, backgroung color, font family, 
+		
+		h1: changed line-height, set background image aligned to right with no repeat,
+			20 px padding on left, and adjusted height to 72 to accomadate image, set bottom margin to 0
+			
+		h2: changed color, and font family
+		
+		h3: changed font color
+		
+		nav: made block element, added bold weight, background color, set 5px padding
+			nav hyperlinks: no style, set margin , set padding, added visted and highlited colors,
+		
+		dt: added bold weight and font color
+
+	special classes and identifiers:
+		
+		clear class: clears both left and right floats
+		resort class: changed font size, and color
+		wrapper identifier: auto set margin, set an 80% width, set color, set min width,
+							set max width, set box shadow     
+		
+	Footer: made block element, changed font size, added italics centered text, added 10 px padding
+
+
+
+----------------------------------------------------------------------*/
+
+/*----------------web page--------------*/
+body { background: url(images/background.jpg);
+		color: #666;
+font-family: Arial, Verdana, sans-serif;}
+
+/*---------------header---------------*/
+
+header { background-color: #000033;
+			color: #fff;
+			line-height: 200%;
+font-family: Georgia, serif;}
+
+/*------------main--------------------*/
+main {background-color: #fff;
+		margin-left: 170px;
+		padding: 1px 20px;
+}
+
+main img {float: left;
+			padding-right: 20px;
+			padding-bottom: 20px;
+}
+
+main ul { list-style-position: inside;}
+
+ #mobile {display: none;}
+ 
+ #desktop {display: inline;}
+
+/*--------------h1--------------------*/
+
+h1 { line-height: 200%;
+	background: url(images/sunset.jpg);
+	background-position: right;
+	background-repeat: no-repeat;
+	padding-left: 20px;
+	height: 72px;
+	margin-bottom: 0;
+	}
+
+/*-----------h2---------------*/
+
+h2 { color: #39c;
+		font-family: Georgia;}
+
+/*-----------h3---------------*/
+h3 {color: #003
+	}
+
+/*--------------Nav-----------*/
+
+nav { font-weight: bold;
+		float: left;
+		width: 160px;
+		padding: 20px 5px 0px;}
+		
+/*------Nav list stylings------*/
+
+nav ul {list-style-type: none;
+		margin: 0;
+		padding-left: 0;}
+		
+/*---------Nav hyperlinks-----*/
+
+nav a {text-decoration: none;
+		display: block;
+		text-align: center;
+		padding: 5px;
+		border: 2px outset #ccc;
+		background-color: #003;
+		color: #fff;}
+		
+nav a:visited {background-color: #90c7e3;
+}
+
+nav a:hover {background-color: #39c;
+			border: 2px inset #666;
+}
+		
+/*---------Dt----------*/
+
+dt { font-weight: bold;
+		color: #000033;}
+		
+/*------------special class------------*/
+
+.resort { color: #000033;
+			font-size: 1.2em;}
+			
+.clear {clear: both;}
+	
+
+/*--------footer---------*/
+
+footer { font-size: .70em;
+			font-style: italic;
+			text-align: center;
+			padding: 10px;
+			background-color: #fff;
+			margin-left: 170px;
+			}
+
+/*----------Wrapper------------*/
+
+#wrapper { margin: auto;
+			width: 80%;
+			background-color: #90c7e3;
+			min-width: 700px;
+			max-width: 1024px;
+			box-shadow: 3px 3px 3px #666;
+}
+
+/*---------block element-----------*/
+header, nav, main, footer {display: block;}
+
+/*-------------Table-------------*/
+
+table {margin: auto;
+	border: 1px solid #39c;
+	width: 90%;
+	border-collapse: collapse;
+}
+
+th {padding: 5px;
+	border: 1px solid #39c;
+}
+
+td {padding: 5px;
+	border: 1px solid #39c;
+	text-align: center;
+}
+
+tr:nth-of-type(even) {background-color: #f5fafc}
+
+.textleft {text-align: left;}
+
+
+
+/*-------------------------------------------------------------
+                 Tablet Media Query
+-------------------------------------------------------------*/
+
+@media only screen and (max-width:1024px) {
+	
+	body {margin: 0;
+			padding: 0;
+		background-image: none;}
+	
+	#wrapper {width: auto;
+			min-width: 0;
+			box-shadow: none;}
+	
+	h1 {margin: 0;}
+	
+	nav {float: none;
+		width: auto;
+		padding: 0.5em;
+	}
+	
+	nav li {display: inline-block;}
+	
+	nav a {padding: 1em;}
+	
+	main {padding: 1em;
+		margin-left: 0;
+		font-size: 90%;
+	}
+	
+	footer {margin-left: 0;}
+	
+	#navBottom {display: none;}
+}
+
+/*-------------------------------------------------------------
+                 Smartphone Media Query
+-------------------------------------------------------------*/
+
+@media only screen and (max-width:768px) {
+	
+	h1 {height: 100%;
+		font-size: 1.5em;
+		padding-left: 0.3em;
+	}
+	
+	nav { padding: 0;}
+	
+	footer {margin-left: 0;}
+	
+	nav a {display: block;
+			padding: 0.2em;
+			font-size: 1.3em;
+			border-bottom: 1px #300;
+	}
+	
+	nav ul {margin: 0;
+			padding: 0;
+	}
+	
+	nav li {display: block;
+			margin: 0;
+			padding: 0;
+			font-size: 0.85em;
+	}
+	
+	main {padding: 0.1em 0 0.1em 0.4em;}
+	
+	main img {display: none;
+			padding-right: 0;
+	}
+	
+	main ul {list-style-position: outside;}
+	
+	footer {padding: 0;}
+	
+	#navBottom {display: none;}
+	
+	#mobile {display: inline;}
+	
+	#desktop {display: none;}
+}
+
+/*-------------------------------------------------------------
+                 Print Media Query
+-------------------------------------------------------------*/
+
+@media print{
+	
+	body {background-image: none;}
+	
+	h1 {margin-top: 0;
+		margin-bottom: 0;
+	}
+	
+	nav {display: none;}
+	
+	footer {margin-left: 0;}
+	
+	main {width: 90%;
+			padding: 1px 10px;
+			margin-left: 10px;
+			margin-right: 10px;
+	}
+	
+	a {text-decoration: none;
+		color: #000;
+	}
+	
+	main a::after {content: "(" attr(href) ")";
+				font-size: 0.9em;
+	}
+	
+	#wrapper {background-color: #fff;
+				min-width: 0;
+				width: 95%;
+				box-shadow: none;
+				border: thin solid #000;
+	}
+	
+	#navBottom {display: none;
+	}
+
+	.newpage{page-break-before: always;}
+}
