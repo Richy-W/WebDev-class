@@ -1,0 +1,111 @@
+/*-------------------------------------------------------------------
+Project Name: Pacific trails
+Author: Richard Wren
+version: 1.2
+last changed: 1/25/21
+
+Colors:
+  used #ffffff, #666666, #90c7e3, #000033
+
+
+Typography:
+	main: made block element, 20 px padding on left and right.
+	
+	Body: added background image, font color, and font family.
+	
+		header: adjusted line height, color, backgroung color, font family, 
+		
+		h1: changed line-height, set background image aligned to right with no repeat,
+			20 px padding on left, and adjusted height to 72 to accomadate image, set bottom margin to 0
+			
+		h2: changed color, and font family
+		
+		h3: changed font color
+		
+		nav: added bold weight, font color, set 5px padding
+		
+		dt: added bold weight and font color
+
+	special classes and identifiers:
+	
+		resort class: changed font size, and color
+		wrapper identifier: auto set margin, set an 80% width, set color, set min width,
+							set max width, set box shadow
+		
+	Footer: changed font size, added italics centered text, added 10 px padding
+
+
+
+----------------------------------------------------------------------*/
+
+/*----------------web page--------------*/
+body { background: url(images/background.jpg);
+		color: #666;
+font-family: Arial, Verdana, sans-serif;}
+
+/*---------------header---------------*/
+
+header { background-color: #000033;
+			color: #fff;
+			line-height: 200%;
+font-family: Georgia, serif;}
+
+/*------------main--------------------*/
+main {display: block;
+		padding-left: 20px;
+		padding-right: 20px;
+}
+
+/*--------------h1--------------------*/
+
+h1 { line-height: 200%;
+	background: url(images/sunset.jpg);
+	background-position: right;
+	background-repeat: no-repeat;
+	padding-left: 20px;
+	height: 72px;
+	margin-bottom: 0;
+	}
+
+/*-----------h2---------------*/
+
+h2 { color: #39c;
+		font-family: Georgia;}
+
+/*-----------h3---------------*/
+h3 {color: #003
+	}
+
+/*--------------Nav-----------*/
+
+nav { font-weight: bold;
+		color: #90c7e3;
+		padding: 5px;}
+		
+/*---------Dt----------*/
+
+dt { font-weight: bold;
+		color: #000033;}
+		
+/*------------special class------------*/
+
+.resort { color: #000033;
+			font-size: 1.2em;}
+
+/*--------footer---------*/
+
+footer { font-size: .70em;
+			font-style: italic;
+			text-align: center;
+			padding: 10px;
+			}
+
+/*----------Wrapper------------*/
+
+#wrapper { margin: auto;
+			width: 80%;
+			background-color: #fff;
+			min-width: 700px;
+			max-width: 1024px;
+			box-shadow: 3px 3px 3px #666;
+}
